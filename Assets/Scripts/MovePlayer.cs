@@ -9,6 +9,15 @@ public class MovePlayer : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementDirection;
 
+
+    private void Awake()
+    {
+        if (movementJoystick == null)
+        {
+            GameObject tempJoy = GameObject.FindGameObjectWithTag("Joystick_Control");
+            movementJoystick = tempJoy.GetComponent<MovementJoystick>();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
