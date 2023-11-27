@@ -168,6 +168,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &932945751631201275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8279923772418817040}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8279923772418817040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932945751631201275}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70247525, w: 0.71170825}
+  m_LocalPosition: {x: 0.9917097, y: -0.15999997, z: 0.0005681147}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 712029119011025315}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.252}
 --- !u!1 &1346720752442806943
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +212,7 @@ GameObject:
   - component: {fileID: 8315622222695411962}
   - component: {fileID: 3179970195895023678}
   - component: {fileID: 5312114397723660107}
+  - component: {fileID: 1562946387676108219}
   m_Layer: 0
   m_Name: holdinghandgun
   m_TagString: Player
@@ -208,8 +240,9 @@ Transform:
   - {fileID: 6094524831802114960}
   - {fileID: 180618926542431587}
   - {fileID: 8997665200356859911}
+  - {fileID: 8279923772418817040}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &29907138734082787
 SpriteRenderer:
@@ -349,6 +382,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 0}
   playerSpeed: 6
+--- !u!114 &1562946387676108219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346720752442806943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bd2135a28066344847722955d4240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6625784407174732036, guid: 56e8321c9bf33c0419ef1f0a520dd60b, type: 3}
+  firePoint: {fileID: 8279923772418817040}
+  bulletForce: 20
+  fireRate: 10
 --- !u!1 &1676621680019763760
 GameObject:
   m_ObjectHideFlags: 0
