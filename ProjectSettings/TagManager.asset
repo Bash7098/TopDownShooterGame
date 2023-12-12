@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Joystick_Control
+  - Bullet
   layers:
   - Default
   - TransparentFX
