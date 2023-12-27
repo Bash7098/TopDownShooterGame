@@ -9,13 +9,18 @@ public class ShotgunShooting : MonoBehaviour
 
     private float nextFireTime = 0f;
 
+    public GunReloader gunReloader; // Reference to the GunReloader script
+
     void Update()
     {
         // Check for the spacebar key press and fire rate
         if (Input.GetKey(KeyCode.Space) && Time.time >= nextFireTime)
         {
-            Shoot();
-            nextFireTime = Time.time + 1f / fireRate; // Update the next fire time based on the fire rate
+            if (gunReloader.TryShoot())
+            {
+                Shoot();
+                nextFireTime = Time.time + 1f / fireRate; // Update the next fire time based on the fire rate
+            }
         }
     }
 
