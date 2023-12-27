@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class GunReloader : MonoBehaviour
@@ -20,6 +19,15 @@ public class GunReloader : MonoBehaviour
         UpdateAmmoText();
     }
 
+    void Update()
+    {
+        // Check for the "R" key press to manually reload
+        if (Input.GetKeyDown(KeyCode.R) && currentAmmo < maxAmmo && !isReloading)
+        {
+            StartCoroutine(Reload());
+        }
+    }
+
     public bool TryShoot()
     {
         if (currentAmmo > 0 && !isReloading)
@@ -28,7 +36,7 @@ public class GunReloader : MonoBehaviour
             UpdateAmmoText();
             return true;
         }
-        
+
         if (currentAmmo <= 0 && !isReloading)
         {
             StartCoroutine(Reload());
