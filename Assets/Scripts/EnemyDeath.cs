@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyDeath : MonoBehaviour
 {
     public int health = 3; // Adjust the initial health as needed
+    public int pointsOnKill = 10; // Points awarded when the enemy is killed
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,6 +20,13 @@ public class EnemyDeath : MonoBehaviour
                 // Check if the enemy has no health left
                 if (health <= 0)
                 {
+                    // Inform the player's scoring system about the kill
+                    PlayerScore playerScore = FindObjectOfType<PlayerScore>(); // Find the PlayerScore script in the scene
+                    if (playerScore != null)
+                    {
+                        playerScore.AddScore(pointsOnKill);
+                    }
+
                     // Perform disappearance logic
                     Destroy(gameObject);
                 }
