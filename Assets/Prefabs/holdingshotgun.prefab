@@ -578,7 +578,7 @@ MonoBehaviour:
   - {fileID: 4948074394014559575}
   - {fileID: 3291402312730247219}
   - {fileID: 3275418787499839765}
-  bulletForce: 10
+  bulletForce: 15
   fireRate: 2
   gunReloader: {fileID: 8576094132602120520}
 --- !u!114 &2886451396903046862
