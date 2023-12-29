@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f822527cb7a6fc4489e0585354ba483a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 4
+  maxHealth: 5
   healthBar: {fileID: 3801532701849202774}
 --- !u!114 &8576094132602120520
 MonoBehaviour:
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8cdad8d932d1543893fe91de5e766e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAmmo: 6
+  maxAmmo: 8
   reloadTime: 2
   ammoText: {fileID: 6556072214823621668}
   reloadText: {fileID: 7593597243205667573}

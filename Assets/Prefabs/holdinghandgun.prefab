@@ -400,7 +400,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6625784407174732036, guid: 56e8321c9bf33c0419ef1f0a520dd60b, type: 3}
   firePoint: {fileID: 8279923772418817040}
   bulletForce: 15
-  fireRate: 4
+  fireRate: 5
   gunReloader: {fileID: 4852924930670296589}
 --- !u!114 &1915908908901871159
 MonoBehaviour:
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f822527cb7a6fc4489e0585354ba483a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 4
+  maxHealth: 5
   healthBar: {fileID: 3351583723631481666}
 --- !u!114 &4852924930670296589
 MonoBehaviour:
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8cdad8d932d1543893fe91de5e766e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAmmo: 11
+  maxAmmo: 17
   reloadTime: 1
   ammoText: {fileID: 4051730740053057096}
   reloadText: {fileID: 6189199452996997805}
