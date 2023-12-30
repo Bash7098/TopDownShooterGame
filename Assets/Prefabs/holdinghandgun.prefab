@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 1154279374128320394}
   - component: {fileID: 1915908908901871159}
   - component: {fileID: 4852924930670296589}
+  - component: {fileID: 3219925604917800463}
   m_Layer: 0
   m_Name: holdinghandgun
   m_TagString: Player
@@ -432,6 +433,22 @@ MonoBehaviour:
   reloadTime: 1
   ammoText: {fileID: 4051730740053057096}
   reloadText: {fileID: 6189199452996997805}
+--- !u!114 &3219925604917800463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346720752442806943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd3ecf54f660e64dab19bdf767a2305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 2
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &1676621680019763760
 GameObject:
   m_ObjectHideFlags: 0

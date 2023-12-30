@@ -396,6 +396,7 @@ GameObject:
   - component: {fileID: -3481750411992340608}
   - component: {fileID: -5938541828206651351}
   - component: {fileID: 8672487764875569699}
+  - component: {fileID: 56874776463822020}
   m_Layer: 0
   m_Name: holdingSMG
   m_TagString: Player
@@ -613,6 +614,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   healthBar: {fileID: 1207052421295832301}
+--- !u!114 &56874776463822020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346720752442806943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd3ecf54f660e64dab19bdf767a2305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 2
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &1604692233670057259
 GameObject:
   m_ObjectHideFlags: 0
