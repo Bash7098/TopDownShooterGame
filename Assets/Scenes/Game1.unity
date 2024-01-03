@@ -9887,7 +9887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8267350735853952423, guid: 48e324a296d57124eb0a13afa16c0b95, type: 3}
-  spawnInterval: 0.8
+  spawnInterval: 2.5
   maxEnemies: 15
 --- !u!1 &523874835
 GameObject:
@@ -26333,10 +26333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff4b114d5179ca4db3b8e7888b07663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownTime: 90
-  remainingTime: 0
-  timerText: {fileID: 0}
-  isCountdownActive: 0
 --- !u!114 &1370614676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26764,7 +26760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8267350735853952423, guid: 48e324a296d57124eb0a13afa16c0b95, type: 3}
-  spawnInterval: 1
+  spawnInterval: 2
   maxEnemies: 15
 --- !u!1 &1392184304
 GameObject:
@@ -31983,7 +31979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8267350735853952423, guid: 48e324a296d57124eb0a13afa16c0b95, type: 3}
-  spawnInterval: 1
+  spawnInterval: 3
   maxEnemies: 20
 --- !u!1 &1652377960
 GameObject:
@@ -43199,7 +43195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8267350735853952423, guid: 48e324a296d57124eb0a13afa16c0b95, type: 3}
-  spawnInterval: 1
+  spawnInterval: 1.7
   maxEnemies: 7
 --- !u!1 &2146111534
 GameObject:
